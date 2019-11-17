@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Applicant, applicantsFactory } from 'projects/domain/src';
 
 @Component({
   selector: 'app-dashboard-page',
@@ -7,11 +6,7 @@ import { Applicant, applicantsFactory } from 'projects/domain/src';
   styleUrls: ['./dashboard-page.component.sass']
 })
 export class DashboardPageComponent implements OnInit {
-  public applicants: Array<Applicant> = [];
-
   constructor() {}
 
-  ngOnInit() {
-    this.applicants = applicantsFactory(21);
-  }
+  ngOnInit() {}
 }

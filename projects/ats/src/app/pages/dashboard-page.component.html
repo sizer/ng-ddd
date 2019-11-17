@@ -1,7 +1,5 @@
 <p>dashboard-page works!</p>
 
-<ul>
-  <li *ngFor="let applicant of applicants">
-    {{ applicant.name.firstName }} is {{ applicant.status }}
-  </li>
-</ul>
+<a [routerLink]="['/applicants']">
+  <p>Applicants List</p>
+</a>
